@@ -8,7 +8,6 @@
 # Website     : www.adeept.com
 # Date        : 2015/06/12
 #-----------------------------------------------------------
-
 import RPi.GPIO as GPIO
 import time
 
@@ -31,8 +30,7 @@ GPIO.setup(18,GPIO.IN)
 time.sleep(2)
 try:
 	while True:
-		print 'Distance: %0.2f m' %checkdist()
+		print('Distance: %0.2f m' %checkdist())
 		time.sleep(0.5)
 except KeyboardInterrupt:
 	GPIO.cleanup()
-

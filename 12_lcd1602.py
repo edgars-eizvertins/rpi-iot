@@ -186,7 +186,7 @@ class Adafruit_CharLCD:
 
 	def pulseEnable(self):
 		self.GPIO.output(self.pin_e, False)
-		self.delayMicroseconds(1)		# 1 microsecond pause - enable pulse must be > 450ns 
+		self.delayMicroseconds(1)		# 1 microsecond pause - enable pulse must be > 450ns
 		self.GPIO.output(self.pin_e, True)
 		self.delayMicroseconds(1)		# 1 microsecond pause - enable pulse must be > 450ns 
 		self.GPIO.output(self.pin_e, False)
